@@ -40,4 +40,8 @@ components:
       background: '', bold: false, underline: false, icon: ''}
     name: outlined_button_2
     layout_properties: {grid_position: 'HOUSRS,QXIEME'}
+- type: GridPanel
+  properties: {}
+  name: grid_panel_1
+  layout_properties: {grid_position: 'DIZJJH,VAMZET'}
 is_package: true

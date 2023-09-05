@@ -3,7 +3,19 @@ from anvil import *
 
 class Form2(Form2Template):
   def __init__(self, **properties):
-    # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-    # Any code you write here will run before the form opens.
+    data = [
+      {"My Label 1": TextBox(nam)},
+      {"My label 2": CheckBox()}
+    ]
+
+    row_count = 0
+    for d in data:
+      for k,v in d.items():
+        l = Label(text=k)
+        self.grid_panel_1.add_component(l, row=f"row{row_count}", width_xs=6)
+        self.grid_panel_1.add_component(v, row=f"row{row_count}", width_xs=6)
+      
+      
+      
