@@ -6,7 +6,7 @@ class Form2(Form2Template):
     self.init_components(**properties)
 
     data = [
-      {"My Label 1": TextBox(nam)},
+      {"My Label 1": TextBox()},
       {"My label 2": CheckBox()}
     ]
 
